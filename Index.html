@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nom de la collection</title>
+<style>
+:root{--beige:#D4D3C6;--clair:#F8F8F3;--bleu:#A7B4C2;--gris:#AEACA6;--brun:#68635D;--anthracite:#595C64;--encre:#3E4046}
+*{box-sizing:border-box}
+body{margin:0;background:var(--beige);color:var(--encre);font-family:system-ui,sans-serif;line-height:1.7}
+.page{max-width:900px;margin:0 auto}
+a{color:inherit}
+header{text-align:center;padding:32px 16px 26px}
+header svg,header img{width:64px;height:auto}
+nav{display:flex;justify-content:center;gap:24px;margin-top:16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+nav a{text-decoration:none}
+.photo{background:var(--bleu);display:flex;align-items:center;justify-content:center;font-size:12px;text-align:center;padding:8px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.sombre{color:var(--clair)}
+.bandeau{height:clamp(140px,28vw,260px)}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:72px 28px}
+.intro .nom{text-align:center;color:var(--anthracite)}
+.intro h1{font-family:Georgia,serif;font-weight:400;font-size:28px;margin:0}
+.intro .sous{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.intro p{font-size:14px;margin:0 0 14px}
+h2{text-align:center;font-family:Georgia,serif;font-weight:400;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--anthracite);margin:0 0 28px}
+.triptyque{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;align-items:start;margin-bottom:80px}
+.triptyque figure{margin:0}
+.triptyque figure:nth-child(odd){padding-top:40px}
+.triptyque .photo{aspect-ratio:1/1}
+.triptyque figure:nth-child(2) .photo{aspect-ratio:2/3}
+figcaption{text-align:center;padding-top:14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--anthracite)}
+figcaption span{display:block;letter-spacing:0;text-transform:none;color:var(--encre)}
+.journal{padding:0 28px 80px}
+.journal .grille{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.journal .photo{aspect-ratio:4/5;background:var(--gris)}
+.journal p{font-size:14px;margin:0 0 14px}
+.lien{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--anthracite);padding-bottom:2px}
+.citation{background:var(--anthracite);color:var(--clair);height:clamp(120px,24vw,220px);display:flex;align-items:flex-end;padding:18px 20px;font-family:Georgia,serif;font-style:italic}
+.rangee{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:4px}
+.rangee .photo{aspect-ratio:3/4}
+.rangee .photo:nth-child(1){background:var(--gris)}
+.rangee .photo:nth-child(2){background:var(--bleu)}
+.rangee .photo:nth-child(3){background:var(--brun)}
+.rangee .photo:nth-child(4){background:var(--clair)}
+.rangee .photo:nth-child(5){background:var(--anthracite)}
+footer{text-align:center;padding:40px 16px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+footer a{margin:0 10px;text-decoration:none}
+@media (max-width:520px){
+  .intro,.journal .grille{grid-template-columns:1fr}
+  nav{gap:14px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <svg viewBox="0 0 836 620" role="img" aria-label="Renard en bond">
+    <path fill="#363948" d="M70,195 L125,220 L150,160 Q160,150 175,175 L235,270 Q300,245 400,215 Q460,200 520,195 Q515,140 560,90 Q650,20 810,5 Q835,5 835,40 Q830,160 700,215 Q665,232 635,240 Q720,285 785,365 Q800,405 780,432 Q745,445 690,425 Q600,395 540,395 Q480,405 420,460 Q330,550 250,605 Q200,625 185,590 L190,540 L110,590 Q80,605 65,580 Q60,560 110,465 L50,466 Q5,465 5,445 Q5,425 40,365 Q65,320 65,260 Z"/>
+  </svg>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#journal">Journal</a>
+    <a href="https://atelier-eterre.com">Atelier</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="photo bandeau">Photo de lieu, large</div>
+
+<section class="intro">
+  <div class="nom">
+    <h1>Nom</h1>
+    <div class="sous">de la collection</div>
+  </div>
+  <div>
+    <p>Des bols, des tasses et des assiettes modelés à la main, pour les moments de pause.</p>
+    <p>Pas pour impressionner. Pour accompagner.</p>
+  </div>
+</section>
+
+<section id="collection">
+  <h2>Trois pièces</h2>
+  <div class="triptyque">
+    <figure>
+      <div class="photo" style="background:var(--gris)">Bol</div>
+      <figcaption>Bol<span>matière / geste / pause</span></figcaption>
+    </figure>
+    <figure>
+      <div class="photo sombre" style="background:var(--brun)">Tasse</div>
+      <figcaption>Tasse<span>matière / geste / pause</span></figcaption>
+    </figure>
+    <figure>
+      <div class="photo">Assiette</div>
+      <figcaption>Assiette<span>matière / geste / pause</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="journal" class="journal">
+  <h2>Le journal saisonnier</h2>
+  <div class="grille">
+    <div class="photo">Photo du journal</div>
+    <div>
+      <p>Un journal à remplir, pour ralentir et noter ce qui compte. Une édition par saison.</p>
+      <a class="lien" href="#">Découvrir</a>
+    </div>
+  </div>
+</section>
+
+<div class="citation">Pensé pour accompagner la pause</div>
+
+<div class="rangee">
+  <div class="photo">Détail</div>
+  <div class="photo">Lieu</div>
+  <div class="photo sombre">Texture</div>
+  <div class="photo">Lumière</div>
+  <div class="photo sombre">Objet</div>
+</div>
+
+<footer id="contact">
+  <a href="#">Instagram</a>
+  <a href="#">Contact</a>
+  <a href="https://atelier-eterre.com">atelier-eterre.com</a>
+</footer>
+
+</div>
+</body>
+</html>
